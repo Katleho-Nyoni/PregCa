@@ -7,11 +7,15 @@ export default function Calculator() {
     const period_date = new Date(period);
     const sex_date = new Date(sex);
 
+    
     const ovulation_date_Lowerbound = new Date(period_date);
     const ovulation_date_Upperbound = new Date(period_date);
     ovulation_date_Lowerbound.setDate(ovulation_date_Lowerbound.getDate() + 12);
     ovulation_date_Upperbound.setDate(ovulation_date_Upperbound.getDate() + 14);
 
+    const fertility_window_start = new Date(period);
+    fertility_window_start.setDate(fertility_window_start.getDate() + 7); /* the 8th day after period start | grey area */
+    
 
     return(
         <>
