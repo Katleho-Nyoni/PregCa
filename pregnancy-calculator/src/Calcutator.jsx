@@ -1,8 +1,15 @@
+import { useState } from 'react';
 import Display from './assets/sincerely-media-unsplash.jpg';
+
+
 export default function Calculator() {
 
-    const period = document.getElementById('period-date').value;
-    const sex= document.getElementById('sex-date').value;
+    const [period, setPeriod] = useState('');
+    const [sex, setSex] = useState('');
+    const [results, setResults] = useState('');
+
+    period = document.getElementById('period-date').value;
+    sex = document.getElementById('sex-date').value;
 
     const period_date = new Date(period);
     const sex_date = new Date(sex);
@@ -16,7 +23,6 @@ export default function Calculator() {
     const fertility_window_start = new Date(period);
     fertility_window_start.setDate(fertility_window_start.getDate() + 7); /* the 8th day after period start | grey area */
 
-    let results;
     if (sex_date >= period_date && sex_date < fertility_window_start) {
         results = "LOW";
     } else if (sex_date >= fertility_window_start && sex_date < ovulation_date_Lowerbound){
@@ -40,7 +46,7 @@ export default function Calculator() {
                     <input type="date" id="sex-date" name="sex-date" required />
                     <br />
                     <p>Are you pregnant:</p>
-                    <button >Find Out</button>
+                    <button type='submit' >Find Out</button>
                     <p>The Probability that you're pregnant is: </p>
                     <p>{results}</p>
                 </span>
