@@ -15,7 +15,10 @@ export default function Calculator() {
 
     const fertility_window_start = new Date(period);
     fertility_window_start.setDate(fertility_window_start.getDate() + 7); /* the 8th day after period start | grey area */
-    
+
+    if (sex_date >= ovulation_date_Lowerbound || sex_date <= ovulation_date_Upperbound) {
+        const results = "High";
+    } 
 
     return(
         <>
@@ -32,6 +35,7 @@ export default function Calculator() {
                     <p>Are you pregnant:</p>
                     <button >Find Out</button>
                     <p>The Probability that you're pregnant is: </p>
+                    <p>{results}</p>
                 </span>
             </div>
         </>
