@@ -1,6 +1,18 @@
 import Display from './assets/sincerely-media-unsplash.jpg';
 export default function Calculator() {
 
+    const period = document.getElementById('period-date').value;
+    const sex= document.getElementById('sex-date').value;
+
+    const period_date = new Date(period);
+    const sex_date = new Date(sex);
+
+    const ovulation_date_Lowerbound = new Date(period_date);
+    const ovulation_date_Upperbound = new Date(period_date);
+    ovulation_date_Lowerbound.setDate(ovulation_date_Lowerbound.getDate() + 12);
+    ovulation_date_Upperbound.setDate(ovulation_date_Upperbound.getDate() + 14);
+
+
     return(
         <>
             <div className="container">
@@ -14,7 +26,7 @@ export default function Calculator() {
                     <input type="date" id="sex-date" name="sex-date" required />
                     <br />
                     <p>Are you pregnant:</p>
-                    <button>Find Out</button>
+                    <button >Find Out</button>
                     <p>The Probability that you're pregnant is: </p>
                 </span>
             </div>
