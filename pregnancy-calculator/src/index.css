@@ -4,7 +4,9 @@
   scroll-behavior: smooth;
 }
 
-
+label, .results {
+  font-weight: 600;
+}
 
 .container {
   /* height: 100vh; */
@@ -58,7 +60,7 @@ button {
   margin: 10px;
   border-radius: 5px;
   border: none;
-  background-color:blue;
+  background-color: brown;
   color: white;
   font-weight: 600;
   font-size: 16px;
