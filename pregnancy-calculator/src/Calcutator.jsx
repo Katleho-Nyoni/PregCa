@@ -11,13 +11,14 @@ export default function Calculator() {
     const period_date = new Date(period);
     const sex_date = new Date(sex);
 
-    
+    const GenerateResults = () => (){}
+
     /*
     const ovulation_date_Lowerbound = new Date(period_date);
     const ovulation_date_Upperbound = new Date(period_date);
     ovulation_date_Lowerbound.setDate(ovulation_date_Lowerbound.getDate() + 12);
     ovulation_date_Upperbound.setDate(ovulation_date_Upperbound.getDate() + 14);
-
+G
     const fertility_window_start = new Date(period);
     fertility_window_start.setDate(fertility_window_start.getDate() + 7); // the 8th day after period start | grey area 
 
@@ -45,7 +46,7 @@ export default function Calculator() {
                     <input type="date" id="sex-date" name="sex-date" value={sex} onChange={e => setSex(e.target.value)} required />
                     <br />
                     <p>Are you pregnant:</p>
-                    <button type='submit' >Find Out</button>
+                    <button type='submit'onClick={GenerateResults}  >Find Out</button>
                     <p>The Probability that you're pregnant is: </p>
                     <p>{results}</p>
                 </span>
