@@ -28,12 +28,16 @@ export default function Calculator() {
 
     if (sex_date >= period_date && sex_date < fertility_window_start) {
         results = "VERY LOW";
+        console.log(`Fertility Window Starts: ${fertility_window_start} | Ovulation Lowerbound: ${ovulation_date_Lowerbound} | Ovulation Upperbound: ${ovulation_date_Upperbound}`);
     } else if (sex_date >= fertility_window_start && sex_date < ovulation_date_Lowerbound){
         results = "MEDIUM HIGH";
+        console.log(`Fertility Window Starts: ${fertility_window_start} | Ovulation Lowerbound: ${ovulation_date_Lowerbound} | Ovulation Upperbound: ${ovulation_date_Upperbound}`);
     } else if (sex_date >= ovulation_date_Lowerbound && sex_date <= ovulation_date_Upperbound) {
         results = "HIGH";
+        console.log(`Fertility Window Starts: ${fertility_window_start} | Ovulation Lowerbound: ${ovulation_date_Lowerbound} | Ovulation Upperbound: ${ovulation_date_Upperbound}`);
     } else if (sex_date > ovulation_date_Upperbound) {
         results = "LOW";
+        console.log(`Fertility Window Starts: ${fertility_window_start} | Ovulation Lowerbound: ${ovulation_date_Lowerbound} | Ovulation Upperbound: ${ovulation_date_Upperbound}`);
     }
     setResults(results);
 }
