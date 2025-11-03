@@ -27,12 +27,14 @@ export default function Calculator() {
     fertility_window_start.setDate(fertility_window_start.getDate() + 7); // the 8th day after period start | grey area 
 
     if (sex_date >= period_date && sex_date < fertility_window_start) {
-        results = "LOW";
+        results = "VERY LOW";
     } else if (sex_date >= fertility_window_start && sex_date < ovulation_date_Lowerbound){
         results = "MEDIUM HIGH";
     } else if (sex_date >= ovulation_date_Lowerbound || sex_date <= ovulation_date_Upperbound) {
         results = "HIGH";
-    } 
+    } else if (sex_date > ovulation_date_Upperbound) {
+        results = "LOW";
+    }
     setResults(results);
 }
 
