@@ -30,7 +30,7 @@ export default function Calculator() {
         results = "VERY LOW";
     } else if (sex_date >= fertility_window_start && sex_date < ovulation_date_Lowerbound){
         results = "MEDIUM HIGH";
-    } else if (sex_date >= ovulation_date_Lowerbound || sex_date <= ovulation_date_Upperbound) {
+    } else if (sex_date >= ovulation_date_Lowerbound && sex_date <= ovulation_date_Upperbound) {
         results = "HIGH";
     } else if (sex_date > ovulation_date_Upperbound) {
         results = "LOW";
