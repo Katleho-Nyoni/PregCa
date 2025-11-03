@@ -1,7 +1,7 @@
 # PregCa
 ![](./menstrual-cycle.webp)
 
-Preg-Ca is a ***Pregnancy Calculator*** that let's you estimate if you & your partner have possibly conseived by using simple Mathematics.
+[Preg-Ca](https://preg-ca.netlify.app/) is a ***Pregnancy Calculator*** that let's you estimate if you & your partner have possibly conseived by using simple Mathematics.
 
 It is estimated that an ovum(egg) can stay up to 48 hours in the fallopian tubes, waiting to be fertilized by a sperm cell,
 while a healthy sperm cell(s) can survive up to 5 days waiting to fertilize the ovum.
