@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Display from './assets/febe-vanermen-zD-YtCWPe8w-unsplash.webp';
+import Display from '../assets/febe-vanermen-zD-YtCWPe8w-unsplash.webp';
 
 
 export default function Calculator() {
@@ -59,15 +59,6 @@ export default function Calculator() {
                     <button onClick={GenerateResults}  >Find Out</button>
                     <p>The Probability that you're pregnant is: </p>
                     <p className='results'>{results}</p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <h3>Use with Caution!</h3>
-                    <br />
-                    <p>Use recommended solutions by Health practitioners. (e.g Pregnancy tests)</p>
                 </span>              
             </div>
         </>
