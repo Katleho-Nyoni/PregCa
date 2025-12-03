@@ -6,8 +6,8 @@ import { Link  } from "react-router-dom";
 export default function Home() {
     return (
         <>
-        <div className="flex flex-row content-center gap-8">
-            <div className="p-20 border border-blue-500 rounded-xl flex flex-col gap-4">
+        <div className="flex flex-row content-center gap-8 sm:flex-col md:flex-col md:gap-4">
+            <div className="p-20 border border-blue-500 rounded-xl flex flex-col gap-4 md:p-10">
             <h3 className="font-bold text-xl">Want to find out if you're pregnant? </h3>
             <p>You can now use simple Mathematics to determine if you're pregnant or not.</p>
             <p>Things to know:</p>
