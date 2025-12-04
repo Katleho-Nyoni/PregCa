@@ -6,9 +6,9 @@ import { Link  } from "react-router-dom";
 export default function Home() {
     return (
         <>
-        <div className="flex flex-row content-center gap-8 sm:flex-col md:flex-col md:gap-4">
-            <div className="p-20 border border-blue-500 rounded-xl flex flex-col gap-4 md:p-10">
-            <h3 className="font-bold text-xl">Want to find out if you're pregnant? </h3>
+        <div className="h-screen flex flex-row content-center gap-8 bg-linear-to-r from-fuchsia-900 via-10% to-red-700">
+            <div className="p-20 rounded-xl flex flex-col gap-4 ">
+            <h3 className="font-bold text-xl ">Want to find out if you're pregnant? </h3>
             <p>You can now use simple Mathematics to determine if you're pregnant or not.</p>
             <p>Things to know:</p>
             <ul className="list-disc list-inside flex flex-col content-normal">
@@ -17,10 +17,10 @@ export default function Home() {
                 <li>Healthy sperm cells can last up to 5 days waiting to fertalize.</li>
             </ul>
             <p>Thus the fertility window(period) starts 5 days before ovulation.</p>
-            <Link to='/are-we-pregnant' className=" font-bold text-white bg-blue-600 rounded py-2 px-5 ">  Pregnancy Calculator </Link>
+            <Link to='/are-we-pregnant' className=" font-bold text-white bg-blue-600 hover:bg-red-600 rounded py-2 px-5 ">  Pregnancy Calculator </Link>
         </div>
 
-        <div className="p-20 border border-blue-500 rounded-xl flex flex-col gap-4">
+        <div className="p-20 rounded-xl flex flex-col gap-4">
             <h3 className="font-bold text-xl">Want to plan to be pregnant? </h3>
             <p>You can now use simple Mathematics to schedule for sex if you want to concieve.</p>
             <p>Things to know:</p>
@@ -30,7 +30,7 @@ export default function Home() {
                 <li>Healthy sperm cells can last up to 5 days waiting to fertalize.</li>
             </ul>
             <p>Thus the fertility window(period) starts 5 days before ovulation.</p>
-            <Link to='/when-should-we-have-sex' className="font-bold text-white bg-blue-600 rounded py-2 px-5"> When To Sex </Link> 
+            <Link to='/when-should-we-have-sex' className="font-bold text-white bg-blue-600 hover:bg-fuchsia-900 rounded py-2 px-5"> When To Sex </Link> 
         </div>
         </div>
 

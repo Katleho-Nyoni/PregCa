@@ -44,22 +44,22 @@ export default function Calculator() {
 
     return(
         <>
-            <div className="container">
-                <img src={Display} alt="" />
-                <span className="content">
-                    <h1>Pregnancy Calculator</h1>
-                    <br />
-                    <label htmlFor="period-date">1st Period Date</label>
-                    <input type="date" id="period-date" name="period-date" value={period} onChange={e => setPeriod(e.target.value)} required />
-                    <br />
-                    <label htmlFor="sex-date">Sex Date</label>
+            <div className='flex justify-center items-center  '>
+                <img src={Display} alt="" className="h-screen w-screen " />
+                <div className="top-4 absolute flex flex-col justify-center gap-4 bg-white/70 p-6 rounded-lg border border-amber-800 shadow-lg shadow-amber-300">
+                    <div className='  justify-start'>
+                        <label htmlFor="period-date" className='font-bold '>1st Period Date</label>
+                    <input type="date" id="period-date" name="period-date" value={period} onChange={e => setPeriod(e.target.value)} className='border border-amber-600' required />
+                    </div>
+                    <div>
+                        <label htmlFor="sex-date" className='font-bold '>Sex Date</label>
                     <input type="date" id="sex-date" name="sex-date" value={sex} onChange={e => setSex(e.target.value)} required />
-                    <br />
+                    </div>
                     <p>Are you pregnant:</p>
-                    <button onClick={GenerateResults}  >Find Out</button>
+                    <button onClick={GenerateResults}  className='py-2 px-3 text-white font-bold bg-amber-800 rounded border hover:border-indigo-800 cursor-pointer'>Find Out</button>
                     <p>The Probability that you're pregnant is: </p>
-                    <p className='results'>{results}</p>
-                </span>              
+                    <p className='results font-extrabold'>{results}</p>
+                </div>              
             </div>
         </>
     );
