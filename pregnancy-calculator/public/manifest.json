@@ -1,6 +1,5 @@
 {
   "short_name": "PregCa",
-  "name": "Pregnancy Calculator",
   "icons": [
     {
       "src": "logo192.png",
@@ -18,7 +17,7 @@
   "start_url": "https://preg-ca.netlify.app/",
   "display": "standalone",
   "theme_color": "#ffffff",
-  "background_color": "#e13d6e",
+  "background_color": "#ffffff",
   "shortcuts": [
     {
       "name": "Am I pregnant?",
