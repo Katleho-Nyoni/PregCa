@@ -16,7 +16,7 @@ export default function Calculator() {
     }
 
     const GenerateResults = () => {
-
+        
     
     const ovulation_date_Lowerbound = new Date(period);
     const ovulation_date_Upperbound = new Date(period);
